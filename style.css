@@ -225,7 +225,7 @@
 
 .section-title h2 {
     font-size: 2.5rem;
-    color: #0b1d2a; /* Dark navy color */
+    color: #0b1d2a; 
     margin-bottom: 15px;
 }
 
@@ -235,25 +235,25 @@
     font-size: 1.1rem;
 }
 
-/* The Grid for your 22-inch monitor */
+
 .cards-grid {
     display: flex;
     justify-content: center;
-    gap: 25px; /* Space between cards */
-    flex-wrap: wrap; /* Allows cards to wrap if screen is small */
+    gap: 25px; 
+    flex-wrap: wrap; 
 }
 
 .feature-card {
     background: #fff;
     padding: 40px 30px;
     border-radius: 12px;
-    width: 260px; /* Fixed width to keep cards uniform */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Soft shadow */
+    width: 260px; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); 
     transition: transform 0.3s ease;
 }
 
 .feature-card:hover {
-    transform: translateY(-10px); /* Small lift effect on hover */
+    transform: translateY(-10px); 
 }
 
 /* Icon Styling */
@@ -269,8 +269,8 @@
 }
 
 .red-bg {
-    background-color: #ffeded; /* Light red/pink background */
-    color: #e74c3c; /* Red icon color */
+    background-color: #ffeded; 
+    color: #e74c3c; 
 }
 
 .feature-card h3 {
@@ -285,8 +285,217 @@
     line-height: 1.5;
 }
 
-/* Change this in your style.css */
+/* Change this in my style.css */
 .red-bg {
-    background-color: #ff4d4d; /* This is a bright, clear red */
-    color: white;             /* This makes the icon inside white */
+    background-color: #ff4d4d; 
+    color: white;             
+}
+
+
+.solution-section {
+    padding: 100px 0;
+    background-color: #fcfcfc; 
+}
+
+/* This is the key for the split layout */
+.solution-split {
+    display: flex;
+    align-items: center;      
+    justify-content: space-between;
+    gap: 80px;                
+}
+
+.solution-image {
+    flex: 1;                  
+}
+
+.solution-image img {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 15px 30px rgba(0,0,0,0.08));
+}
+
+.solution-content {
+    flex: 1;                  
+    text-align: left;
+}
+
+.label {
+    color: #4db36f;         
+    font-weight: bold;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.solution-content h2 {
+    font-size: 3rem;       
+    color: #0b1d2a;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.solution-content p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Styling the Checkmark List */
+.check-list {
+    list-style: none;
+    padding: 0;
+}
+
+.check-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: #333;
+}
+
+.check-list .icon {
+    color: #4db36f;
+    font-weight: bold;
+}
+
+
+.cta-section {
+    padding: 100px 0;
+    background-color: #ffffff;
+}
+
+.cta-box-centered {
+    background-color: #f9f8f4; 
+    padding: 80px 40px;
+    border-radius: 24px;
+    text-align: center;      
+    max-width: 1000px;       
+    margin: 0 auto;
+}
+
+.cta-box-centered h2 {
+    font-size: 3rem;         
+    color: #0b1d2a;
+    margin-bottom: 20px;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.cta-description {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 600px;        
+    margin: 0 auto 40px auto; 
+    
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #4db36f; 
+    color: white;
+    padding: 16px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s ease;
+
+}
+
+.btn-primary:hover {
+    background-color: #3e9e5d;
+    transform: translateY(-2px); 
+}
+
+
+.cta-footer-note {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #999;
+}
+
+
+
+
+.site-footer {
+  background-color: #071e34; /* dark navy blue */
+  color: #ffffff;
+  padding: 40px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Logo */
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-icon {
+  font-size: 24px;
+}
+
+.logo-text {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.logo-subtext {
+  font-size: 12px;
+  opacity: 0.7;
+  margin-left: 6px;
+}
+
+/* Social */
+.footer-social h4 {
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icons a {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.social-icons a:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Bottom copyright */
+.footer-bottom {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  text-align: center;
+  font-size: 13px;
+  opacity: 0.8;
 }
