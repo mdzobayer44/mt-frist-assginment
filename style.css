@@ -118,7 +118,7 @@
 
 }
 
-/* Dark overlay to make text pop */
+
 .hero-overlay {
     background: rgba(0, 0, 0, 0.5); 
     width: 100%;
@@ -214,4 +214,79 @@
 .play-icon {
 
     font-size: 0.8rem;
+}
+
+
+.features-section {
+    padding: 80px 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    color: #0b1d2a; /* Dark navy color */
+    margin-bottom: 15px;
+}
+
+.section-title p {
+    color: #666;
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+}
+
+/* The Grid for your 22-inch monitor */
+.cards-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px; /* Space between cards */
+    flex-wrap: wrap; /* Allows cards to wrap if screen is small */
+}
+
+.feature-card {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    width: 260px; /* Fixed width to keep cards uniform */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Soft shadow */
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px); /* Small lift effect on hover */
+}
+
+/* Icon Styling */
+.icon-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 1.5rem;
+}
+
+.red-bg {
+    background-color: #ffeded; /* Light red/pink background */
+    color: #e74c3c; /* Red icon color */
+}
+
+.feature-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.feature-card p {
+    font-size: 0.95rem;
+    color: #777;
+    line-height: 1.5;
+}
+
+/* Change this in your style.css */
+.red-bg {
+    background-color: #ff4d4d; /* This is a bright, clear red */
+    color: white;             /* This makes the icon inside white */
 }
